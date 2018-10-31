@@ -1,0 +1,308 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(231, 231, 231);
+    height:100%;
+    width: 100%;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.container{
+    margin-left:50px;
+    margin-right:50px;
+}
+
+/*#region header*/
+.header {
+    background: rgb(30, 30, 30);
+}
+
+.header input[type = "text"]{
+    margin-left: 50px;
+    text-align: center;
+    color: rgb(30, 30, 30);
+    background: rgb(230,230,230);
+    border: 1px solid rgb(50, 50, 50);
+    height : 30px;
+    caret-color: rgb(200, 46, 46);
+}
+
+.header input::placeholder{
+    color: rgb(196, 107, 107);
+}
+
+.headerR{
+    padding-top: 7px;
+    padding-right: 50px;
+    float: right;
+}
+
+.headerR a{
+    color: rgb(200, 200, 200);
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.headerR a:hover
+{
+    color:rgb(200, 46, 46);
+}
+/*#endregion*/
+
+
+/*#region logoBar*/
+
+.logo{
+    margin-bottom: 50px;
+}
+
+.logoBar{
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.logoBar img{
+    float: left;
+    justify-content: center;
+    margin-right: 10px;
+    margin-top: 0px;
+    width:300px;
+    height:96px;
+}
+
+.logoSub{
+    padding-top: 3px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.logoSub h1{
+    padding-top: 5px;
+    font-size: 20px;
+    color: rgb(20, 20, 20)
+}
+
+.logoSub p{
+    font-size: 14px;
+    color: rgb(30, 30, 30);
+}
+
+/*#endregion*/
+
+
+/*#region navBar*/
+.topnav {
+    display : flex;
+    height: 50px;
+    background-color: rgb(30, 30, 30);
+    border-color: rgb(30, 30, 30);
+}
+
+.topnavSub{
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.topnavSub a {
+    margin-left: 20px;
+    color: rgb(230, 230, 230);
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 14px;
+    font-size: 18px;
+}
+
+.topnavSub a:hover {
+    background-color: rgb(200, 46, 46);
+    color: rgb(230,230,230);
+    text-decoration: underline;
+    text-decoration-color: rgb(200, 200, 200);
+}
+
+
+/*#endregion*/
+
+
+/*#region Reactive Component*/
+@media only screen and (max-width: 768px) and (min-width: 300px) {
+    
+    .header input[type = "text"]
+    {
+        margin-left: 10px;
+    }
+
+    .headerR{
+        padding-right: 20px;
+    }
+
+    .headerR a{
+        font-size: 12px;
+    }
+
+    .logo{
+        margin-bottom: 20px;
+    }
+    
+    .logoBar{
+        display:flex;
+        margin-left: 0px;
+    }
+    
+    .logoBar img{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .logoSub{
+        text-align: center;
+    }
+    
+    .topnavSub a{
+        margin-left: 10px;
+        font-size: 16px;
+    }
+    
+}
+
+
+/*#endregion*/
+/*Cart*/
+.cart{
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-bottom: 20px;
+}
+
+.cartTable{
+	text-align: center;
+}
+
+th, td{
+	font-weight: bold;
+	border-bottom: 2px solid grey; 
+	border-collapse:separate;
+	padding: 20px;
+}
+
+.productItem img{
+	max-height: 60%;
+	max-width: 60%;
+	display: flex;
+	border: 2px solid grey;
+}
+
+.qtyInput{
+	width: 40px;
+	height: 30px;
+	text-align: center;
+	border: 2px solid black;
+	background: rgb(231, 231, 231);
+	color: black;
+	font-weight: bold;
+}
+
+span{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+}
+
+.checkOut{
+  padding: 12px 0;
+  width: 100%;
+  text-align: right;
+}
+
+.submit{
+	padding: 12px 40px;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	background-color: black;
+	border:none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+}
+
+.submit:hover {background-color: #db0000}
+
+.submit:active {
+  background-color: #db0000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+     background-color: rgb(30, 30, 30);
+     color: rgb(100, 100, 100);
+    /*text-align: center;*/
+ }
+ 
+ 
+ .grid-container {
+     display: grid;
+    /* grid-column-gap: 20px;*/
+     grid-template-columns: auto;
+     background-color:  rgb(30, 30, 30);
+    /* padding: 10px;*/
+ }
+ 
+ .grid-item {
+     background-color: transparent;
+    /* border: 1px solid rgba(0, 0, 0, 0.8);*/
+     padding: 0px;
+     width: 100%;
+     font-size: 14px;
+     text-align: center;
+ }
+ 
+ .grid-item img{
+     padding-left: 5px;
+ }
+ 
+/*For footer responsive*/
+@media only screen and (min-width: 500px){
+    
+    .grid-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grid-item{
+        width: auto;
+        padding: 20px;
+    }
+
+    .grid-item:nth-child(even){
+        padding-top:19px;
+    }
+
+}
+
+@media only screen and (max-width: 560px){
+    
+    .logo{
+        margin-bottom: 10px;
+    }
+    
+    .topnavSub a{
+        margin-left: 0px;
+        padding: 10px 10px;
+        font-size: 14px;
+    }
+
+    .service{
+        width:100%;
+    }
+
+}
