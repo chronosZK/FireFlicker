@@ -44,22 +44,15 @@ body{
     color: rgb(200, 200, 200);
     text-decoration: none;
     font-size: 14px;
-<<<<<<< HEAD
-=======
     cursor: pointer;
->>>>>>> ab8b781b8ce5478e145a24eec3909d378d022187
 }
-/*#endregion*/
 
-<<<<<<< HEAD
-=======
 .headerR a:hover
 {
     color:rgb(200, 46, 46);
 }
 /*#endregion*/
 
->>>>>>> ab8b781b8ce5478e145a24eec3909d378d022187
 
 /*#region logoBar*/
 
@@ -68,27 +61,13 @@ body{
 }
 
 .logoBar{
-<<<<<<< HEAD
-    margin-top: 30px;
-    margin-left: 50px;
-=======
     margin-top: 20px;
     margin-left: 0px;
->>>>>>> ab8b781b8ce5478e145a24eec3909d378d022187
 }
 
 .logoBar img{
     float: left;
     justify-content: center;
-<<<<<<< HEAD
-    margin-right: 30px;
-    margin-top: 10px;
-    width:250px;
-    height:80px;
-}
-
-.logoSub{
-=======
     margin-right: 10px;
     margin-top: 0px;
     width:300px;
@@ -97,7 +76,6 @@ body{
 
 .logoSub{
     padding-top: 3px;
->>>>>>> ab8b781b8ce5478e145a24eec3909d378d022187
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -144,72 +122,6 @@ body{
     color: rgb(230,230,230);
     text-decoration: underline;
     text-decoration-color: rgb(200, 200, 200);
-<<<<<<< HEAD
-}
-
-
-/*#endregion*/
-
-
-/*#region Reactive Component*/
-@media only screen and (max-width: 768px) and (min-width: 400px) {
-    
-    .logo{
-        margin-bottom: 20px;
-    }
-    
-    .logoBar{
-        display:flex;
-        margin-left: 0px;
-    }
-    
-    .logoBar img{
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .logoSub{
-        text-align: center;
-    }
-    
-    .topnavSub a{
-        margin-left: 10px;
-        font-size: 16px;
-    }
-    
-}
-
-
-/*#endregion*/
-
-section{
-    width:100%;
-    height:auto;
-    justify-content: center;
-    align-items: center;
-    border: 1px black solid;
-}
-
-.productImageHeader {
-    display: flex;
-    overflow: scroll;
-    margin-bottom: 20px;
-}
-
-.productCard {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 200px;
-  height: 350px;
-  margin: 30px;
-  text-align: center;
-  font-family: arial;
-}
-
-.more img{
-    height:350px;
-    width:100px;
-=======
 }
 
 
@@ -260,118 +172,71 @@ section{
 
 
 /*#endregion*/
-
-section{
-    width:100%;
-    height:auto;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 0.5px solid rgb(150, 150, 150);
+/*Cart*/
+.cart{
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-bottom: 20px;
 }
 
-.productImageHeader {
-    display: flex;
-    overflow-x: scroll;
-    margin-bottom: 20px;
+.cartTable{
+	text-align: center;
 }
 
-.productCard {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 200px;
-  height: 350px;
-  margin: 30px;
-  text-align: center;
+th, td{
+	font-weight: bold;
+	border-bottom: 2px solid grey; 
+	border-collapse:separate;
+	padding: 20px;
 }
 
-.more img{
-    padding-top: 150px;
-    height:100px;
-    width:50px;
->>>>>>> ab8b781b8ce5478e145a24eec3909d378d022187
-    text-align: center;
+.productItem img{
+	max-height: 60%;
+	max-width: 60%;
+	display: flex;
+	border: 2px solid grey;
 }
 
-.productImageHeader .productCard img {
-    width: auto;
-    height: 200px;
+.qtyInput{
+	width: 40px;
+	height: 30px;
+	text-align: center;
+	border: 2px solid black;
+	background: rgb(231, 231, 231);
+	color: black;
+	font-weight: bold;
 }
 
-
-.newsCard {
-    width:400px;
-    height: 200px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 30px;    
+span{
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
 }
 
-.productImageHeader .newsCard img {
-    width: 300px;
-    height:100%;
+.checkOut{
+  padding: 12px 0;
+  width: 100%;
+  text-align: right;
 }
 
-.moreNews img{
-<<<<<<< HEAD
-    height:200px;
-    width:100px;
-=======
-    padding-top: 90px;
-    height:100px;
-    width:50px;
->>>>>>> ab8b781b8ce5478e145a24eec3909d378d022187
-    text-align: center;
+.submit{
+	padding: 12px 40px;
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	cursor: pointer;
+	background-color: black;
+	border:none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
 }
 
-.cen{
-    max-width: 1200px;
-    margin: auto;
-<<<<<<< HEAD
-    overflow: hidden;
-    padding: 20px;
-=======
-    overflow-x: hidden;
-    padding: 20px;
-    padding-top:0px;
->>>>>>> ab8b781b8ce5478e145a24eec3909d378d022187
-    text-align: center;
-}
+.submit:hover {background-color: #db0000}
 
-.service{
-    display: inline-block;
-    width: calc(100% / 3);
-    margin: 0 -2px;
-    padding: 20px;
-    box-sizing: border-box;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-.service:hover{
-    background-color: #ddd;
-}
-
-.service i{
-    color: rgb(200, 46, 46);
-    font-size: 34px;
-    margin-bottom: 30px;
-}
-
-.service h2{
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin: 0;
-}
-
-.service p{
-    color: grey;
-    font-size: 15px;
-    font-weight: 500;
-}
-
-.service i{
-    color: rgb(200, 46, 46);
-    font-size: 34px;
-    margin-bottom: 30px;
+.submit:active {
+  background-color: #db0000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 footer{
@@ -411,33 +276,6 @@ footer{
     
     .grid-container{
         grid-template-columns: 1fr 1fr 1fr;
-<<<<<<< HEAD
-    }
-
-    .grid-item{
-        width: auto;
-        padding: 20px;
-    }
-
-    .grid-item:nth-child(even){
-        padding-top:19px;
-    }
-
-}
-
-@media only screen and (max-width: 500px){
-    
-    .logo{
-        margin-bottom: 10px;
-    }
-    
-    .topnavSub a{
-        margin-left: 0px;
-        padding: 10px 10px;
-        font-size: 14px;
-    }
-
-=======
     }
 
     .grid-item{
@@ -463,11 +301,8 @@ footer{
         font-size: 14px;
     }
 
->>>>>>> ab8b781b8ce5478e145a24eec3909d378d022187
     .service{
         width:100%;
     }
 
 }
-
-

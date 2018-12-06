@@ -60,7 +60,11 @@ h1 {
         color: #fff;
 }
 
+<<<<<<< HEAD
 .loginbox input[type="submit"] {
+=======
+.button{
+>>>>>>> ab8b781b8ce5478e145a24eec3909d378d022187
     border: none;
     outline: none;
     height: 40px;
@@ -68,9 +72,20 @@ h1 {
     font-size: 18px;
     color: #fff;
     border-radius: 20px;
+<<<<<<< HEAD
 }
 
 .loginbox input[type="submit"]:hover {
+=======
+    margin-left: auto;
+    margin-right:auto;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top:10px;
+}
+
+.button:hover{
+>>>>>>> ab8b781b8ce5478e145a24eec3909d378d022187
     cursor: pointer;
     background: #ff0000;
     color: #000;

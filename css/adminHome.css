@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+    background: rgb(30,30,30);
+}
+
+.navO{
+    color: rgb(200,200,200);
+    font-size: 30px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 50px;
+    display:block;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.navO:hover{
+    color:rgb(200,46,46);
+}
+
+.navBar{
+    width: 0;
+    overflow-x: hidden;
+    height: 100vh;
+    z-index: 1;
+    position: fixed;
+    background: rgba(90, 90, 90, 0.9);
+    transition: .3s;
+    display: block;
+}
+
+.navBar a{
+    color: rgb(200,200,200);
+    font-size: 30px;
+    text-decoration: none;
+    display: block;
+    font-family: sans-serif;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 10px;
+    transition: .3s;
+    clear: left;
+}
+
+.navC{
+    float: left;
+    margin: 10px 0 0 10px;
+}
+
+.navC:hover{
+    color: rgb(200,46,46);
+}
+
+.navBar a:not(:first-child):hover{
+    background: rgb(200, 46, 46);
+
+}
+
+.pageTittle{
+    display: inline-flex;
+    color: rgb(230,230,230);
+    padding-top: 4px;
+}
+
+.adminInfo{
+    float: right;
+    padding-top: 10px;
+    margin-right: 10px;
+    color: rgb(200,200,200);
+}
+
+.adminInfo:hover{
+    color: rgb(200,46,46);
+}
+
+h2{
+    margin-top: 50px;
+    margin-left: 90px;
+    color: rgb(200,200,200);
+}
+
+.content{
+    height: 80vh;
+}
+
+.images{
+    display: flex;
+    width: 100%;
+}
+
+.images img{
+    padding-top: 50px;
+    margin:auto;
+}
+
+footer{
+    display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+     background-color: rgb(30, 30, 30);
+     color: rgb(100, 100, 100);
+    /*text-align: center;*/
+ }
+ 
+
+.container{
+    margin: auto;
+}
+
+.grid-container {
+    display: grid;
+   /* grid-column-gap: 20px;*/
+    grid-template-columns: auto;
+    background-color:  rgb(30, 30, 30);
+   /* padding: 10px;*/
+}
+
+.grid-item {
+    background-color: transparent;
+   /* border: 1px solid rgba(0, 0, 0, 0.8);*/
+    padding: 0px;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 500px){
+    
+    .grid-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grid-item{
+        width: auto;
+        padding: 20px;
+    }
+
+    .grid-item:nth-child(even){
+        padding-top:19px;
+    }
+
+}

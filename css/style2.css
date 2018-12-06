@@ -50,6 +50,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
     .loginbox input[type="text"], input[type="password"] {
         border: none;
         border-bottom: 1px solid #fff;
@@ -75,6 +76,37 @@ h1 {
             background: #ff0000;
             color: #000;
         }
+=======
+.loginbox input[type="text"], input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+}
+.button{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #e62121;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right:auto;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top:10px;
+}
+
+.button:hover{
+    cursor: pointer;
+    background: #ff0000;
+    color: #000;
+}
+>>>>>>> ab8b781b8ce5478e145a24eec3909d378d022187
 
 .loginbox a {
     text-decoration: none;
@@ -83,6 +115,12 @@ h1 {
     color: darkgrey;
 }
 
+<<<<<<< HEAD
     .loginbox a:hover {
         color:#f94141 ;
     }
+=======
+.loginbox a:hover {
+    color:#f94141 ;
+}
+>>>>>>> ab8b781b8ce5478e145a24eec3909d378d022187
