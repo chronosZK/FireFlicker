@@ -11,6 +11,7 @@ firebase.initializeApp(config);
 
 // Initialize Cloud Firestore through Firebase
 var db = firebase.firestore();
+var dbStorage = firebase.storage();
 
 // Disable deprecated features
 db.settings({
