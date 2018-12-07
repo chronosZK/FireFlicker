@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Add Product</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/addProduct.css">
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+    <script src="../js/firebase.js"></script>
+    <script src="../js/addProduct.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div id = "navBar" class="navBar">
+            <a href ="javascript:void(0)" id= "navC" class = "navC" 
+            onclick = "closeMenu()">&times</a>
+            <a href ="adminHome.html">Home</a>
+            <a href ="">Manage Products</a>
+            <a href ="">Manage Articles</a>
+            <a href ="">Settings</a>
+        </div>
+
+        <span id="navO" class = "navO" onclick="openMenu()">&#9776</span>
+
+        <h1 id="pageTittle" class="pageTittle">Home</h1>
+        <a href= "adminLogin.html" id ="adminInfo" class="adminInfo">Lorem Ipsum</a>
+         
+
+        <div class="container">
+            <h2>PRODUCT FORM</h2>
+            <h4>Name</h4>
+            <input type="text" id="name" style="width:50%;height: 20px;">
+            <h4>Price (RM)</h4>
+            <input type="number" id="price" style="width:50%;height: 20px;">
+            <h4>Picture</h4>
+            <input type="file" id="imgfile"><br>
+            <progress id="progressBar" value="0" max="100" style="width:45%;"></progress>
+            <span id="progressValue" style="color:rgb(200,200,200);"></span> <br>
+            <button onclick="submit()">Submit</button>
+
+
+         </div>
+
+    </div>
+
+</body>
+</html>>
