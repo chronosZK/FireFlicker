@@ -29,7 +29,8 @@ function submit(){
             db.collection("Products").add({ //add into firestore
                 name: name.value,
                 price: price.value,
-                image: downloadURL
+                image: downloadURL,
+                imageName: imgfile.files[0].name
             })
             .then(function() {
                 alert(name.value + " has been added into list");
